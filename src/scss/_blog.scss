@@ -1,0 +1,149 @@
+/* Blog Post */
+
+.blog-wrapper {
+	margin: 0 auto;
+}
+
+.blog-post {
+	width: 86%;
+	padding: 0 7%;
+	margin-top: 25px;
+	p:first-of-type {
+		font-size: 1.2em;
+		font-weight: 600;
+	}
+	.description a {
+		color: $primary-color;
+		text-decoration: underline;
+	}
+	img {
+		margin-bottom: 20px;
+		max-width: none;
+		width: 100%;
+	}
+	h3 {
+		color: $primary-color;
+	}
+	li {
+		list-style: none;
+		list-style-position: inside;
+	}
+	li::before {
+		content: url('/../img/bullet.gif');
+		color: $primary-color;
+		margin-right: 0.7em;
+	}
+	ul {
+		margin: 0 0 0.7em 0;
+		padding: 0;
+		color: $text-color;
+	}
+}
+
+.blog-index {
+	h2 {
+		margin-top: 0;
+	}
+}
+
+.blog-post-recent {
+	padding: 0 7%;
+	width: 86%;
+	clear: left;
+	margin-top: 20px;
+	h2 {
+		color: $primary-color;
+	}
+}
+
+.addthis_sharing_toolbox {
+	margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+
+	/* Blog Index */
+	.archive-panel li {
+		text-align: left;
+	}
+	.archive-panel-push li {
+		text-align: left;
+	}
+	/* Blog Post */
+	.blog-post-recent li {
+		width: 45%;
+		padding: 0 5% 0 0;
+		float: left;
+	}
+}
+
+@media screen and (min-width: 890px) {
+
+	/* Blog Index */
+	.blog-index {
+		width: 100%;
+	}
+	.archive-panel {
+		width: 15%;
+		float: right;
+		margin: 35px 7% 0 1%;
+		padding: 0 0 0 1%;
+		border-style: solid;
+		border-width: 0 0 0 1px;
+		border-color: $primary-color;
+	}
+	.archive-panel-push {
+		width: 15%;
+		float: right;
+		margin: 102px 7% 0 1%;
+		padding: 0 0 0 1%;
+		border-style: solid;
+		border-width: 0 0 0 1px;
+		border-color: $primary-color;
+	}
+	.primary-content {
+		display: inline-block;
+		width: 30%;
+		vertical-align: top;
+		padding: 0 1%;
+		border-style: solid;
+		border-width: 0 0 0 1px;
+		border-color: $primary-color;
+		margin-top: 35px;
+	}
+
+	/* Blog Post */
+	.year_qty {
+		color: #FFF;
+	}
+	
+	/* Email Page */
+	.emails-page {
+		width: 86%;
+		float: left;
+		margin: 25px 7% 0 7%;
+		padding: 0;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+
+	.blog-post-recent {
+		width: 21.5%;
+		float: right;
+		padding: 0 7% 0 1.75%;
+		margin: 25px 0 0 1.75%;
+		clear: none;
+		border-style: solid;
+		border-width: 0 0 0 1px;
+		border-color: $primary-color;
+	}
+	.blog-post {
+		width: 60.7%;
+		float: left;
+		padding: 0 0 0 7%;
+	}
+	.comment-form {
+		margin-top: 40px;
+	}
+}
